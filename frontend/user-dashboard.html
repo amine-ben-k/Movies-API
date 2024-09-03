@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies and Directors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Movies API</h1>
+
+        <section id="search">
+            <h2>Search Movies</h2>
+            <form id="search-form">
+                <input type="text" id="search-director" placeholder="Movie Name" required>
+                <button type="submit">Search</button>
+            </form>
+            <ul id="search-results">
+                <!-- Search results will be populated dynamically -->
+            </ul>
+        </section>
+        <section id="movies">
+            <h2>Movies</h2>
+            <section id="filter-rating">
+                <h3>Filter Movies by Rating</h3>
+                <form id="rating-form">
+                    <input type="number" id="min-rating" placeholder="Min" min="1" max="5" required>
+                    <input type="number" id="max-rating" placeholder="Max" min="1" max="5" required>
+                    <button type="submit">Filter</button>
+                </form>
+            </section>
+            <ul id="movie-list">
+                <!-- Movie list items will be populated dynamically -->
+            </ul>
+
+        </section>
+
+        <section id="directors">
+            <h2>Directors</h2>
+            <ul id="director-list">
+                <!-- Director list items will be populated dynamically -->
+            </ul>
+
+        </section>
+
+       
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/movies.js"></script>
+    <script type="module" src="js/directors.js"></script>
+    <script type="module" src="js/rating.js"></script>
+    <script type="module" src="js/search.js"></script>
+</body>
+</html>
